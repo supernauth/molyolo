@@ -56,4 +56,5 @@ if __name__ == '__main__':
     book.add_metadata('DC', 'publisher', publisher)
     book.add_metadata('DC', 'description', blurb)
     
-    epub.write_epub('120_haiku_uj.epub', book)
+    new_filename = input('Add meg az új könyv fájlnevét: ')
+    epub.write_epub(new_filename, book)
